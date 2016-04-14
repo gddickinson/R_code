@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library(downloader)\nlibrary(rafalib)\nurl <- \"https://raw.githubusercontent.com/genomicsclass/dagdata/master/inst/extdata/femaleMiceWeights.csv\"\nfilename <- \"femaleMiceWeights.csv\"\nif(!file.exists(\"femaleMiceWeights.csv\")) download(url,destfile=filename)\ndat <- read.csv(filename)\n\nset.seed(1)\nn=100\nprops <- replicate(1000, mean(sample(1:6, n, replace=TRUE)==6)) \n\nset.seed(1)\nn=100\np=1/6\nlist_z <- replicate(10000, (mean(sample(1:6, n, replace=TRUE)==6)- p) / sqrt(p*(1-p)/n))\np <- format(round(p, 2), nsmall = 3)\nhist(list_z, main = paste(\"P =\", p, \"n = \", n))\nz_over_2 <- mean(abs(list_z) > 2)\n\nmypar(2,2)\nset.seed(1)\nn=5\np=0.5\nlist_z <- replicate(10000, (mean(sample(1:6, n, replace=TRUE)==6)- p) / sqrt(p*(1-p)/n))\np <- format(round(p, 2), nsmall = 3)\nhist(list_z, main = paste(\"P =\", p, \"n = \", n))\nz_over_2 <- mean(abs(list_z) > 2)\n\nset.seed(1)\nn=30\np=0.5\nlist_z <- replicate(10000, (mean(sample(1:6, n, replace=TRUE)==6)- p) / sqrt(p*(1-p)/n))\np <- format(round(p, 2), nsmall = 3)\nhist(list_z, main = paste(\"P =\", p, \"n = \", n))\nz_over_2 <- mean(abs(list_z) > 2)\n\nset.seed(1)\nn=5\np=0.01\nlist_z <- replicate(10000, (mean(sample(1:6, n, replace=TRUE)==6)- p) / sqrt(p*(1-p)/n))\np <- format(round(p, 2), nsmall = 3)\nhist(list_z, main = paste(\"P =\", p, \"n = \", n))\nz_over_2 <- mean(abs(list_z) > 2)\n\nset.seed(1)\nn=5\np=0.5\nlist_z <- replicate(10000, (mean(sample(1:6, n, replace=TRUE)==6)- p) / sqrt(p*(1-p)/n))\np <- format(round(p, 2), nsmall = 3)\nhist(list_z, main = paste(\"P =\", p, \"n = \", n))\nz_over_2 <- mean(abs(list_z) > 2)\n\n",
+    "created" : 1460422361970.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1204052727",
+    "id" : "E2F0AD14",
+    "lastKnownWriteTime" : 1460513101,
+    "last_content_update" : 1460514289319,
+    "path" : "~/R_code/EdX_course/Week1_CentralLimitTheorem_3.R",
+    "project_path" : "Week1_CentralLimitTheorem_3.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

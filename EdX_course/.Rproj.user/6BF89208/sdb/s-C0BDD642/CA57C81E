@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library(downloader)\nlibrary(rafalib)\nlibrary(dplyr)\nurl <- \"https://raw.githubusercontent.com/genomicsclass/dagdata/master/inst/extdata/femaleMiceWeights.csv\"\nfilename <- \"femaleMiceWeights.csv\"\nif(!file.exists(\"femaleMiceWeights.csv\")) download(url,destfile=filename)\ndat <- read.csv(filename)\n\n\n#exercises 1-2\nset.seed(1)\nn=100\nprops <- replicate(1000, mean(sample(1:6, n, replace=TRUE)==6)) \n\nset.seed(1)\nn=100\np=1/6\nlist_z <- replicate(10000, (mean(sample(1:6, n, replace=TRUE)==6)- p) / sqrt(p*(1-p)/n))\nhist(list_z)\nz_over_2 <- mean(abs(list_z) > 2)\n\nmypar(2,2)\nset.seed(1)\nn=5\np=1/2\nlist_z <- replicate(10000, (mean(sample(1:2, n, replace=TRUE)==2)- p) / sqrt(p*(1-p)/n))\nhist(list_z, main = paste(\"n=\", n, \"p=\", p))\n\nset.seed(1)\nn=30\np=1/2\nlist_z <- replicate(10000, (mean(sample(1:2, n, replace=TRUE)==2)- p) / sqrt(p*(1-p)/n))\nhist(list_z, main = paste(\"n=\", n, \"p=\", p))\n\nset.seed(1)\nn=30\np=1/100\nlist_z <- replicate(10000, (mean(sample(1:100, n, replace=TRUE)==100)- p) / sqrt(p*(1-p)/n))\nhist(list_z, main = paste(\"n=\", n, \"p=\", p))\n\nset.seed(1)\nn=100\np=1/100\nlist_z <- replicate(10000, (mean(sample(1:100, n, replace=TRUE)==100)- p) / sqrt(p*(1-p)/n))\nhist(list_z, main = paste(\"n=\", n, \"p=\", p))\n\n#exercise3 \n\nX <- filter(dat, Diet==\"chow\") %>% select(Bodyweight) %>% unlist\nY <- filter(dat, Diet==\"hf\") %>% select(Bodyweight) %>% unlist\n\nsampleAverage_X <- mean(X)\n\n",
+    "created" : 1460514361642.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "496325340",
+    "id" : "CA57C81E",
+    "lastKnownWriteTime" : 1460517852,
+    "last_content_update" : 1460517852845,
+    "path" : "~/R_code/EdX_course/Week1_CentralLimitTheorem_3.R",
+    "project_path" : "Week1_CentralLimitTheorem_3.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
