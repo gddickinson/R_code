@@ -1,0 +1,113 @@
+Document Name: salm_samples1-10_dil_ser_1 
+Plate Type: Standard Curve
+User: robert
+
+Document Information
+
+Operator: george
+Run Date: Wednesday, March 15, 2017 15:02:45
+Last Modified: Wednesday, March 22, 2017 13:41:24
+Instrument Type: Applied Biosystems 7500 Fast Real-Time PCR System
+
+Comments:
+SDS v1.4
+
+Electronic Signatures
+No associated Electronic Signatures
+
+Thermal Cycler Profile
+Stage,Repetitions,Temperature,Time,Ramp Rate,Auto Increment
+1,1,95.0 °C,10:00,Auto,,
+2,50,95.0 °C,0:20,Auto,,
+,,55.0 °C,0:20,Auto,,
+,,72.0 °C,0:14,Auto,,
+Fast 7500 Mode
+Data Collection :  Stage 2 Step 3
+PCR Volume: 25 µL,
+Filters Collected: A, D, ,
+
+Well,Sample Name,Detector,Task,Ct,StdDev Ct,Qty,Mean Qty,StdDev Qty,Filtered,Tm,User Defined #1,User Defined #2,User Defined #3
+A2,1: UNDIL,Ori-C,Unknown,25.2,,,,,,
+A2,1: UNDIL,gfp,Unknown,22.1882,,,,,,
+A3,2: UNDIL,Ori-C,Unknown,23.5602,,,,,,
+A3,2: UNDIL,gfp,Unknown,22.0732,,,,,,
+A4,3: UNDIL,Ori-C,Unknown,24.466,,,,,,
+A4,3: UNDIL,gfp,Unknown,22.2464,,,,,,
+A5,4: UNDIL,Ori-C,Unknown,23.4715,,,,,,
+A5,4: UNDIL,gfp,Unknown,22.2656,,,,,,
+A6,5: UNDIL,Ori-C,Unknown,25.1414,,,,,,
+A6,5: UNDIL,gfp,Unknown,22.3003,,,,,,
+A7,6: UNDIL,Ori-C,Unknown,24.8543,,,,,,
+A7,6: UNDIL,gfp,Unknown,22.3114,,,,,,
+A8,7: UNDIL,Ori-C,Unknown,25.4987,,,,,,
+A8,7: UNDIL,gfp,Unknown,21.9088,,,,,,
+A9,8: UNDIL,Ori-C,Unknown,26.3656,,,,,,
+A9,8: UNDIL,gfp,Unknown,22.6734,,,,,,
+A10,9: UNDIL,Ori-C,Unknown,25.0536,,,,,,
+A10,9: UNDIL,gfp,Unknown,22.1203,,,,,,
+A11,10: UNDIL,Ori-C,Unknown,28.0203,,,,,,
+A11,10: UNDIL,gfp,Unknown,22.4277,,,,,,
+B2,1: 1:10,Ori-C,Unknown,29.1018,,,,,,
+B2,1: 1:10,gfp,Unknown,22.4293,,,,,,
+B3,2: 1:10,Ori-C,Unknown,27.388,,,,,,
+B3,2: 1:10,gfp,Unknown,22.7436,,,,,,
+B4,3: 1:10,Ori-C,Unknown,28.341,,,,,,
+B4,3: 1:10,gfp,Unknown,22.8154,,,,,,
+B5,4: 1:10,Ori-C,Unknown,27.2113,,,,,,
+B5,4: 1:10,gfp,Unknown,22.5891,,,,,,
+B6,5: 1:10,Ori-C,Unknown,28.7304,,,,,,
+B6,5: 1:10,gfp,Unknown,22.6304,,,,,,
+B7,6: 1:10,Ori-C,Unknown,28.371,,,,,,
+B7,6: 1:10,gfp,Unknown,22.4367,,,,,,
+B8,7: 1:10,Ori-C,Unknown,29.1544,,,,,,
+B8,7: 1:10,gfp,Unknown,22.7137,,,,,,
+B9,8: 1:10,Ori-C,Unknown,29.8812,,,,,,
+B9,8: 1:10,gfp,Unknown,22.4442,,,,,,
+B10,9: 1:10,Ori-C,Unknown,29.0527,,,,,,
+B10,9: 1:10,gfp,Unknown,22.8639,,,,,,
+B11,10: 1:10,Ori-C,Unknown,31.6686,,,,,,
+B11,10: 1:10,gfp,Unknown,22.855,,,,,,
+C2,1: 1:100,Ori-C,Unknown,32.8037,,,,,,
+C2,1: 1:100,gfp,Unknown,23.317,,,,,,
+C3,2: 1:100,Ori-C,Unknown,30.699,,,,,,
+C3,2: 1:100,gfp,Unknown,22.9821,,,,,,
+C4,3: 1:100,Ori-C,Unknown,31.7757,,,,,,
+C4,3: 1:100,gfp,Unknown,22.4586,,,,,,
+C5,4: 1:100,Ori-C,Unknown,30.631,,,,,,
+C5,4: 1:100,gfp,Unknown,22.7199,,,,,,
+C6,5: 1:100,Ori-C,Unknown,32.0971,,,,,,
+C6,5: 1:100,gfp,Unknown,22.6128,,,,,,
+C7,6: 1:100,Ori-C,Unknown,32.1124,,,,,,
+C7,6: 1:100,gfp,Unknown,22.8488,,,,,,
+C8,7: 1:100,Ori-C,Unknown,32.6437,,,,,,
+C8,7: 1:100,gfp,Unknown,22.7059,,,,,,
+C9,8: 1:100,Ori-C,Unknown,33.6275,,,,,,
+C9,8: 1:100,gfp,Unknown,22.6335,,,,,,
+C10,9: 1:100,Ori-C,Unknown,32.6122,,,,,,
+C10,9: 1:100,gfp,Unknown,22.9691,,,,,,
+C11,10: 1:100,Ori-C,Unknown,35.1989,,,,,,
+C11,10: 1:100,gfp,Unknown,23.0996,,,,,,
+D2,1: 1:1000,Ori-C,Unknown,37.2037,,,,,,
+D2,1: 1:1000,gfp,Unknown,23.5224,,,,,,
+D3,2: 1:1000,Ori-C,Unknown,34.6879,,,,,,
+D3,2: 1:1000,gfp,Unknown,23.1765,,,,,,
+D4,3: 1:1000,Ori-C,Unknown,36.0068,,,,,,
+D4,3: 1:1000,gfp,Unknown,23.2112,,,,,,
+D5,4: 1:1000,Ori-C,Unknown,34.2715,,,,,,
+D5,4: 1:1000,gfp,Unknown,22.8615,,,,,,
+D6,5: 1:1000,Ori-C,Unknown,36.1676,,,,,,
+D6,5: 1:1000,gfp,Unknown,22.8974,,,,,,
+D7,6: 1:1000,Ori-C,Unknown,35.8733,,,,,,
+D7,6: 1:1000,gfp,Unknown,23.0806,,,,,,
+D8,7: 1:1000,Ori-C,Unknown,36.461,,,,,,
+D8,7: 1:1000,gfp,Unknown,22.85,,,,,,
+D9,8: 1:1000,Ori-C,Unknown,37.9067,,,,,,
+D9,8: 1:1000,gfp,Unknown,23.2201,,,,,,
+D10,9: 1:1000,Ori-C,Unknown,36.4998,,,,,,
+D10,9: 1:1000,gfp,Unknown,23.0376,,,,,,
+D11,10: 1:1000,Ori-C,Unknown,Undetermined,,,,,,
+D11,10: 1:1000,gfp,Unknown,Undetermined,,,,,,
+H1,NTC,Ori-C,NTC,Undetermined,,,,,,
+H1,NTC,gfp,NTC,22.5627,,,,,,
+H12,PTC,Ori-C,Unknown,30.4976,,,,,,
+H12,PTC,gfp,Unknown,21.9624,,,,,,

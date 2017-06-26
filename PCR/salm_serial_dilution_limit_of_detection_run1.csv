@@ -1,0 +1,65 @@
+Document Name: salm_serial_dilution_limit_of_detection_run1 
+Plate Type: Standard Curve
+User: robert
+
+Document Information
+
+Operator: george
+Run Date: Tuesday, March 28, 2017 10:24:19
+Last Modified: Tuesday, March 28, 2017 11:50:39
+Instrument Type: Applied Biosystems 7500 Fast Real-Time PCR System
+
+Comments:
+SDS v1.4
+
+Electronic Signatures
+No associated Electronic Signatures
+
+Thermal Cycler Profile
+Stage,Repetitions,Temperature,Time,Ramp Rate,Auto Increment
+1,1,95.0 °C,10:00,Auto,,
+2,50,95.0 °C,0:20,Auto,,
+,,55.0 °C,0:20,Auto,,
+,,72.0 °C,0:14,Auto,,
+Fast 7500 Mode
+Data Collection :  Stage 2 Step 3
+PCR Volume: 25 µL,
+Filters Collected: A, D, ,
+
+Well,Sample Name,Detector,Task,Ct,StdDev Ct,Qty,Mean Qty,StdDev Qty,Filtered,Tm,User Defined #1,User Defined #2,User Defined #3
+A1,NTC,Ori-C,NTC,Undetermined,,,,,,
+A1,NTC,gfp,NTC,25.4436,,,,,,
+A3,UND,Ori-C,Unknown,24.7441,0.127,,,,,
+A3,UND,gfp,Unknown,24.6176,0.378,,,,,
+A6,UND,Ori-C,Unknown,24.9231,0.127,,,,,
+A6,UND,gfp,Unknown,25.1521,0.378,,,,,
+A12,PTC,Ori-C,Unknown,30.0916,,,,,,
+A12,PTC,gfp,Unknown,25.388,,,,,,
+B3,1:10,Ori-C,Unknown,28.8911,0.0301,,,,,
+B3,1:10,gfp,Unknown,26.2434,0.0558,,,,,
+B6,1:10,Ori-C,Unknown,28.8485,0.0301,,,,,
+B6,1:10,gfp,Unknown,26.1645,0.0558,,,,,
+C3,1:100,Ori-C,Unknown,32.4059,0.00729,,,,,
+C3,1:100,gfp,Unknown,25.9435,0.32,,,,,
+C6,1:100,Ori-C,Unknown,32.3956,0.00729,,,,,
+C6,1:100,gfp,Unknown,26.3966,0.32,,,,,
+D3,1:1000,Ori-C,Unknown,36.1345,0.588,,,,,
+D3,1:1000,gfp,Unknown,26.2888,0.00104,,,,,
+D6,1:1000,Ori-C,Unknown,35.3033,0.588,,,,,
+D6,1:1000,gfp,Unknown,26.2873,0.00104,,,,,
+E3,1:10000,Ori-C,Unknown,40.061,1.74,,,,,
+E3,1:10000,gfp,Unknown,26.1724,0.278,,,,,
+E6,1:10000,Ori-C,Unknown,37.5997,1.74,,,,,
+E6,1:10000,gfp,Unknown,26.5653,0.278,,,,,
+F3,1:100000,Ori-C,Unknown,41.9576,,,,,,
+F3,1:100000,gfp,Unknown,26.2918,0.0226,,,,,
+F6,1:100000,Ori-C,Unknown,Undetermined,,,,,,
+F6,1:100000,gfp,Unknown,26.2598,0.0226,,,,,
+G3,1:1000000,Ori-C,Unknown,Undetermined,,,,,,
+G3,1:1000000,gfp,Unknown,26.1396,0.068,,,,,
+G6,1:1000000,Ori-C,Unknown,Undetermined,,,,,,
+G6,1:1000000,gfp,Unknown,26.2357,0.068,,,,,
+H3,1:10000000,Ori-C,Unknown,Undetermined,,,,,,
+H3,1:10000000,gfp,Unknown,25.4276,0.212,,,,,
+H6,1:10000000,Ori-C,Unknown,Undetermined,,,,,,
+H6,1:10000000,gfp,Unknown,25.7268,0.212,,,,,

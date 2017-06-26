@@ -1,0 +1,53 @@
+Document Name: non-salm_samples1-10_run1 
+Plate Type: Standard Curve
+User: robert
+
+Document Information
+
+Operator: george
+Run Date: Wednesday, March 22, 2017 11:56:35
+Last Modified: Wednesday, March 22, 2017 13:19:35
+Instrument Type: Applied Biosystems 7500 Fast Real-Time PCR System
+
+Comments:
+SDS v1.4
+
+Electronic Signatures
+No associated Electronic Signatures
+
+Thermal Cycler Profile
+Stage,Repetitions,Temperature,Time,Ramp Rate,Auto Increment
+1,1,95.0 °C,10:00,Auto,,
+2,50,95.0 °C,0:20,Auto,,
+,,55.0 °C,0:20,Auto,,
+,,72.0 °C,0:14,Auto,,
+Fast 7500 Mode
+Data Collection :  Stage 2 Step 3
+PCR Volume: 25 µL,
+Filters Collected: A, D, ,
+
+Well,Sample Name,Detector,Task,Ct,StdDev Ct,Qty,Mean Qty,StdDev Qty,Filtered,Tm,User Defined #1,User Defined #2,User Defined #3
+A2,1,Ori-C,Unknown,Undetermined,,,,,,
+A2,1,gfp,Unknown,22.2911,,,,,,
+A3,2,Ori-C,Unknown,Undetermined,,,,,,
+A3,2,gfp,Unknown,22.8407,,,,,,
+A4,3,Ori-C,Unknown,Undetermined,,,,,,
+A4,3,gfp,Unknown,22.3521,,,,,,
+A5,4,Ori-C,Unknown,Undetermined,,,,,,
+A5,4,gfp,Unknown,21.5908,,,,,,
+A6,5,Ori-C,Unknown,Undetermined,,,,,,
+A6,5,gfp,Unknown,23.6302,,,,,,
+A7,6,Ori-C,Unknown,Undetermined,,,,,,
+A7,6,gfp,Unknown,23.3602,,,,,,
+A8,7,Ori-C,Unknown,Undetermined,,,,,,
+A8,7,gfp,Unknown,22.7452,,,,,,
+A9,8,Ori-C,Unknown,Undetermined,,,,,,
+A9,8,gfp,Unknown,24.1818,,,,,,
+A10,9,Ori-C,Unknown,Undetermined,,,,,,
+A10,9,gfp,Unknown,23.5153,,,,,,
+A11,10,Ori-C,Unknown,Undetermined,,,,,,
+A11,10,gfp,Unknown,22.5894,,,,,,
+H1,NTC,Ori-C,NTC,Undetermined,,,,,,
+H1,NTC,gfp,NTC,24.0308,,,,,,
+H12,PTC,Ori-C,Unknown,29.5851,,,,,,
+H12,PTC,gfp,Unknown,23.0802,,,,,,
