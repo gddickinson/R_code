@@ -126,32 +126,57 @@ biologicalMeasures <-rowSums(data[,c("biomass","density","moisture","temperature
 survey <- rowSums(data[,c("survey","search","sampled","aerial","visual","helicopter")])
 fertilizer <- rowSums(data[,c("fertilization","fertilizer")])
 
+##### fish and bird techniques################
+#fish<-rowSums(data[,c("submersible","sherman","fyke","electrofishing","sur","hydrophone","pit","trammel","implantation","boat","pectoral","fin","swim","swimming")])
+#bird<-rowSums(data[,c("call.playback","banded","banding","mist.netting","vocalization","singing","band","display","plumage","colorimeter")])
 
-fish<-rowSums(data[,c("submersible","sherman","fyke","electrofishing","sur","hydrophone","pit","trammel","implantation","boat","pectoral","fin","swim","swimming")])
-bird<-rowSums(data[,c("call.playback","banded","banding","mist.netting","vocalization","singing","band","display","plumage","colorimeter")])
+# #####plot project code vs component - birds and fish#########
+# #opar <- par()
+# lablist<-row.names(data_experimental)
+# plot(x=data_experimental$fish+0.001,y=1:99, labels = FALSE, xlab = "Word Frequency (log scale)", ylab = "", log = "x", col= 1:99, pch = 0)
+# axis(1, at=seq(0.1, 10, by=1))
+# axis(2, at=seq(1, 99, by=1), labels = lablist, par(las=2), cex.axis = 0.5)
+# par(new=T)
+# plot(x=data_experimental$bird+0.001,y=1:99, col= 1:99, axes = FALSE, labels = FALSE, xlab = "", ylab = "",log = "x")
+# legend('topright',c("fish","birds"), pch = c(0,1))
+# par(new=F)
+# #par(opar)
+# ##############################################
 
-data_experimental <- data.frame(fish,bird)
 
-#####plot project code vs component - outdoors and laboratory#########
+#####fish, bird, amphbian, bat - all terms######
+fish<-rowSums(data[,c("submersible","sherman","fyke","electrofishing","sur","hydrophone","pit","trammel","implantation","boat","pectoral","fin","swim","swimming","fish","pikeminnow","razorback", "rasu",	"flannelmouth",	"humpback",	"chub",	"bonytail",	"rainbow",	"trout",	"catfish",	"bass")])
+bird<-rowSums(data[,c("call.playback","banded","banding","mist.netting","vocalization","singing","band","display","plumage","colorimeter","avian","woodpecker","bird","warbler","tanager","cuckoo", "owl","flycatcher",	"flicker",	"vireo",	"quail",	"blackbird",	"starling",	"dove",	"migrants",	"waterbirds",	"shorebirds", "yellow.billed","nest","nesting")])
+insects <- rowSums(data[,c("butterfly", "insect", "sootywing")])
+bats <- rowSums(data[,c("bat","roost", "roosting","mine")])
+amphibians <- rowSums(data[,c("amphibian", "frog")])
+
+data_experimental <- data.frame(fish,bird,insects,bats,amphibians)
+
+#####plot project code vs component - birds and fish#########
 #opar <- par()
 lablist<-row.names(data_experimental)
 plot(x=data_experimental$fish+0.001,y=1:99, labels = FALSE, xlab = "Word Frequency (log scale)", ylab = "", log = "x", col= 1:99, pch = 0)
-axis(1, at=seq(0.1, 1.3, by=0.1))
+axis(1, at=seq(0.1, 10, by=1))
 axis(2, at=seq(1, 99, by=1), labels = lablist, par(las=2), cex.axis = 0.5)
 par(new=T)
-plot(x=data_experimental$bird+0.001,y=1:99, col= 1:99, axes = FALSE, labels = FALSE, xlab = "", ylab = "",log = "x")
-legend('topright',c("fish","birds"), pch = c(0,1))
+plot(x=data_experimental$bird+0.001,y=1:99, col= 1:99, axes = FALSE, labels = FALSE, xlab = "", ylab = "",log = "x", pch = 1)
+par(new=T)
+plot(x=data_experimental$insects+0.001,y=1:99, col= 1:99, axes = FALSE, labels = FALSE, xlab = "", ylab = "",log = "x", pch = 2)
+par(new=T)
+plot(x=data_experimental$bats+0.001,y=1:99, col= 1:99, axes = FALSE, labels = FALSE, xlab = "", ylab = "",log = "x", pch = 3)
+par(new=T)
+plot(x=data_experimental$amphibians+0.001,y=1:99, col= 1:99, axes = FALSE, labels = FALSE, xlab = "", ylab = "",log = "x", pch = 4)
+
+legend('bottomright',c("fish","birds","insects","bats","amphibians"), pch = c(0,1,2,3,4), cex = 0.7)
 par(new=F)
 #par(opar)
 ##############################################
 
 
 
-
-
-
 #all data sets
-data_combined2 <- data.frame(fishTracking,birdTracking,birdPlumage,trapping,tracking,physiology,fishPhysiology,waterChemistry,soilChemistry,gis,hatchery,populationStats,genetic,restoration,photography,predation,breeding,transport,diet,biologicalMeasures,survey,fertilizer)
+#data_combined2 <- data.frame(fishTracking,birdTracking,birdPlumage,trapping,tracking,physiology,fishPhysiology,waterChemistry,soilChemistry,gis,hatchery,populationStats,genetic,restoration,photography,predation,breeding,transport,diet,biologicalMeasures,survey,fertilizer)
 
 #selected data
 #data_combined <- data.frame(fishTracking,birdTracking)
@@ -166,73 +191,91 @@ data_combined2 <- data.frame(fishTracking,birdTracking,birdPlumage,trapping,trac
 #remove outlying nodes
 #data_crop <- data_combined[!rownames(data_combined) %in% c("c39", "e14", "e18"), ]
 #data_crop <- data_combined
-data_crop1 <- data_combined1[!rownames(data_combined1) %in% c("c39", "e14", "e27", "e18"), ]
-data_crop2 <- data_combined2[!rownames(data_combined2) %in% c("c39", "e14", "e27", "e18"), ]
+#data_crop1 <- data_combined1[!rownames(data_combined1) %in% c("c39", "e14", "e27", "e18"), ]
+#data_crop2 <- data_combined2[!rownames(data_combined2) %in% c("c39", "e14", "e27", "e18"), ]
 #data_crop <- data_crop[,c("fish","amphibian","bird","bat","vegetation","bacteria","zooplankton","mammal","frog","mussel","cottonwood", "mesquite","razorback","bonytail","chub","tamarisk","larval","eggs")]
 #data_crop <- data_crop[,c("fish","bird", "bat")]
-
+data_crop <- data_experimental
 
 ################################################################
-# K-Means
-
-# # Determine number of clusters
-wss <- (nrow(data_crop1)-1)*sum(apply(data_crop1,2,var))
-for (i in 2:15) wss[i] <- sum(kmeans(data_crop1,
-                                     centers=i)$withinss)
-plot(1:15, wss, type="b", xlab="Number of Clusters",
-     ylab="Within groups sum of squares")
 
 # To standarize the variables
 #data.stand <- scale(data_crop) 
 
 #not standardized
-data.stand1 <- data_crop1
-data.stand2 <- data_crop2
+data.stand <- data_crop
+#data.stand1 <- data_crop1
+#data.stand2 <- data_crop2
+
+#set values > 0 to 1
+data.stand <- ifelse(data.stand> 0, 1,0)
+
+
+# K-Means
+# # Determine number of clusters
+wss <- (nrow(data_crop)-1)*sum(apply(data_crop,2,var))
+for (i in 2:15) wss[i] <- sum(kmeans(data_crop,
+                                     centers=i)$withinss)
+plot(1:15, wss, type="b", xlab="Number of Clusters",
+     ylab="Within groups sum of squares")
+
+
+
 #set number of clusters
-kmeansValue = 12
+kmeansValue = 11
 
-
-k.means.fit1 <- kmeans(data.stand1, kmeansValue) # k = 10
-k.means.fit2 <- kmeans(data.stand2, kmeansValue) # k = 10
+k.means.fit <- kmeans(data.stand, kmeansValue) # k = 10
+#k.means.fit1 <- kmeans(data.stand1, kmeansValue) # k = 10
+#k.means.fit2 <- kmeans(data.stand2, kmeansValue) # k = 10
 #attributes(k.means.fit)
 
 # Centroids:
-k.means.fit1$centers
-k.means.fit2$centers
+k.means.fit$centers
+#k.means.fit1$centers
+#k.means.fit2$centers
+
 # Clusters:
-k.means.fit1$cluster
-k.means.fit2$cluster
+k.means.fit$cluster
+#k.means.fit1$cluster
+#k.means.fit2$cluster
 
 # Cluster size:
-k.means.fit1$size
-k.means.fit2$size
+k.means.fit$size
+#k.means.fit1$size
+#k.means.fit2$size
 
 #dosen't work if too many variables
-clusplot(data.stand, k.means.fit1$cluster, main='2D representation of the Cluster solution',
+clusplot(data.stand, k.means.fit$cluster, main='2D representation of the Cluster solution',
          color=TRUE, shade=TRUE,
          labels=2, lines=0)
 
-clusplot(data.stand, k.means.fit2$cluster, main='2D representation of the Cluster solution',
-         color=TRUE, shade=TRUE,
-         labels=2, lines=0)
+# clusplot(data.stand, k.means.fit1$cluster, main='2D representation of the Cluster solution',
+#          color=TRUE, shade=TRUE,
+#          labels=2, lines=0)
+# 
+# clusplot(data.stand, k.means.fit2$cluster, main='2D representation of the Cluster solution',
+#          color=TRUE, shade=TRUE,
+#          labels=2, lines=0)
 
 #################################################
 # Euclidean distance matrix.
-d1 <- dist(data.stand1, method = "euclidean") # Euclidean distance matrix.
-d2 <- dist(data.stand2, method = "euclidean") # Euclidean distance matrix.
+d <- dist(data.stand, method = "euclidean") # Euclidean distance matrix.
 
+# d1 <- dist(data.stand1, method = "euclidean") # Euclidean distance matrix.
+# d2 <- dist(data.stand2, method = "euclidean") # Euclidean distance matrix.
 
-H.fit1 <- hclust(d1, method="ward.D")
-H.fit2 <- hclust(d2, method="ward.D")
+H.fit <- hclust(d, method="ward.D")
 
-plot(H.fit1) # display dendogram
-Euc_groups <- cutree(H.fit1, k=kmeansValue) # cut tree into 5 clusters
+# H.fit1 <- hclust(d1, method="ward.D")
+# H.fit2 <- hclust(d2, method="ward.D")
+
+plot(H.fit) # display dendogram
+Euc_groups <- cutree(H.fit, k=kmeansValue) # cut tree into 5 clusters
 # draw dendogram with red borders around the 5 clusters
-rect.hclust(H.fit1, k=kmeansValue, border="red") 
+rect.hclust(H.fit, k=kmeansValue, border="red") 
 
-o = data.frame(Euc_groups,k.means.fit1$cluster)
+o = data.frame(Euc_groups,k.means.fit$cluster)
 
-plot2groupings = data.frame(k.means.fit1$cluster,k.means.fit2$cluster)
-
-plot(plot2groupings)
+# plot2groupings = data.frame(k.means.fit1$cluster,k.means.fit2$cluster)
+# plot(plot2groupings)
 
