@@ -1,0 +1,15 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+*.Rdata
+rsconnect/
+# Large course/raw data and personal job-test material kept only locally
+*.CEL
+*.raw
+EdX-Bioinformatics/**/*.zip
+EdX-Bioinformatics/**/*.tar.gz
+ranchoTest/
+shiny/censusDataApp/acs_2012_2016_county_us_B27001/
+shiny/shiny.rstudio.com-tutorial-master/*.pdf
