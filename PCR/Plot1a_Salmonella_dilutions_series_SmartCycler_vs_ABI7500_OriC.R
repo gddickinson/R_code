@@ -7,35 +7,34 @@ smartcycler_gfp = read.csv('smartcycler_gfp_2.csv', header = T)
 abi_gfp = read.csv('abi7500_gfp_2.csv', header = T)
 
 x <- smartcycler_oric$serotype
+pos <- seq_along(x)  # serotype positions in file order (R >= 4.0 reads the names as text, not factor codes)
 
 
 original.parameters<- par(no.readonly = TRUE)
-par(xact="n")
+par(xaxt="n")
 
 
-plot(0:45, xact="n",
+plot(0:45, xaxt="n",
      main="OriC assay",
      xlab='serotype',
      ylab = "ct",
      xlim=c(1,10),
      ylim=c(20,45),
-     type = "n",
-     tick = FALSE,
-     labels = FALSE)
+     type = "n")
 
 axis(1, labels=FALSE, tick = FALSE)
-text(x, par("usr")[3] - 0.2, labels = x, srt = 60, pos = 2, cex = 0.8, xpd = TRUE)
+text(pos, par("usr")[3] - 0.2, labels = x, srt = 60, pos = 2, cex = 0.8, xpd = TRUE)
 axis(2)
 
-points(smartcycler_oric$serotype, smartcycler_oric$X1, col="blue", pch = 16, cex = 1.5)
-points(smartcycler_oric$serotype, smartcycler_oric$X10, col="blue", pch = 16, cex = 1.5)
-points(smartcycler_oric$serotype, smartcycler_oric$X100, col="blue", pch = 16, cex = 1.5)
-points(smartcycler_oric$serotype, smartcycler_oric$X1000, col="blue", pch = 16, cex = 1.5)
+points(pos, smartcycler_oric$X1, col="blue", pch = 16, cex = 1.5)
+points(pos, smartcycler_oric$X10, col="blue", pch = 16, cex = 1.5)
+points(pos, smartcycler_oric$X100, col="blue", pch = 16, cex = 1.5)
+points(pos, smartcycler_oric$X1000, col="blue", pch = 16, cex = 1.5)
 
-points(abi_oric$serotype, abi_oric$X1, col="red", pch = 16, cex = 1.5)
-points(abi_oric$serotype, abi_oric$X10, col="red", pch = 16, cex = 1.5)
-points(abi_oric$serotype, abi_oric$X100, col="red", pch = 16, cex = 1.5)
-points(abi_oric$serotype, abi_oric$X1000, col="red", pch = 16, cex = 1.5)
+points(match(abi_oric$serotype, x), abi_oric$X1, col="red", pch = 16, cex = 1.5)
+points(match(abi_oric$serotype, x), abi_oric$X10, col="red", pch = 16, cex = 1.5)
+points(match(abi_oric$serotype, x), abi_oric$X100, col="red", pch = 16, cex = 1.5)
+points(match(abi_oric$serotype, x), abi_oric$X1000, col="red", pch = 16, cex = 1.5)
 
 
 legend("topleft", 

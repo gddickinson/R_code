@@ -31,6 +31,7 @@ points (x, smartcycler_gfp$cerro, col="pink", pch = 16, cex = pointsize)
 points (x, smartcycler_gfp$hadar, col="grey", pch = 16, cex = pointsize)
 points (x, smartcycler_gfp$muenchen, col="black", pch = 16, cex = pointsize)
 
+points (x2, abi_gfp$enterica, col="red", pch = 15, cex = pointsize)
 points (x2, abi_gfp$typhimurium, col="blue", pch = 15, cex = pointsize)
 points (x2, abi_gfp$irumu, col="green", pch = 15, cex = pointsize)
 points (x2, abi_gfp$newport, col="purple", pch = 15, cex = pointsize)

@@ -31,6 +31,7 @@ points (x, smartcycler_oric$cerro, col="pink", pch = 16, cex = pointsize)
 points (x, smartcycler_oric$hadar, col="grey", pch = 16, cex = pointsize)
 points (x, smartcycler_oric$muenchen, col="black", pch = 16, cex = pointsize)
 
+points (x2, abi_oric$enterica, col="red", pch = 15, cex = pointsize)
 points (x2, abi_oric$typhimurium, col="blue", pch = 15, cex = pointsize)
 points (x2, abi_oric$irumu, col="green", pch = 15, cex = pointsize)
 points (x2, abi_oric$newport, col="purple", pch = 15, cex = pointsize)
@@ -63,4 +64,4 @@ legend("topleft",
        cex = 1.5, 
        bty = "n", 
        legend = c("SmartCycler", "ABI 7500"), 
-       pch = c(15,16))
+       pch = c(16,15))
