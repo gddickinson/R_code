@@ -1,0 +1,43 @@
+/* R code: accent palette (R blue, lime, pink) and page styles. Theme in style.css. */
+:root { --accent:#c6ff4a; --accent2:#ff6fb5; --accent3:#5aa9ff; --glow:rgba(198,255,74,.12); }
+button, .btn, .seg button.on { color:#101a00; }
+.side > *, .two > *, .row > * { min-width:0; }
+.hero .btn { margin-right:10px; }
+.hide { display:none !important; }
+
+/* explorer */
+.tree { position:sticky; top:72px; max-height:calc(100vh - 90px); overflow:auto; padding:10px 12px; font:13px var(--mono); }
+.tree details { margin:2px 0; } .tree details details { margin-left:12px; }
+.tree summary { cursor:pointer; color:var(--accent2); }
+.tree a { display:flex; justify-content:space-between; gap:8px; color:var(--mute); padding:1px 0 1px 12px; overflow-wrap:anywhere; }
+.tree a.on { color:var(--accent); } .tree a.off { opacity:.55; }
+.tree a span:last-child { white-space:nowrap; font-size:11px; }
+.code-view { margin:0; padding:0; overflow:auto; max-height:75vh; }
+.code-view table { border-collapse:collapse; width:auto; min-width:100%; font:12.5px/1.55 var(--mono); }
+.code-view td { border:0; padding:0 10px; white-space:pre; vertical-align:top; }
+.code-view td.n { color:#4a5880; text-align:right; user-select:none; padding-right:12px; border-right:1px solid var(--line); }
+.code-view tr.hl td { background:color-mix(in srgb, var(--accent) 14%, transparent); }
+.kv { display:grid; grid-template-columns:minmax(110px, auto) 1fr; gap:3px 14px; font-size:14px; margin:8px 0; }
+.kv dt { color:var(--mute); } .kv dd { margin:0; font:13px var(--mono); overflow-wrap:anywhere; }
+.report { background:#f7f7f2; color:#1b1b1b; padding:16px 22px; border-radius:6px; }
+.report pre, .report code { background:#ececec; color:#222; border:0; }
+.report img { max-width:100%; height:auto; }
+.data-table td { font:12px var(--mono); white-space:nowrap; }
+.tk-k { color:#ff79c6; } .tk-s { color:#f1fa8c; } .tk-c { color:#7a88b8; font-style:italic; } .tk-n { color:#bd93f9; }
+.tk-b { color:#8be9fd; } .tk-f { color:#50fa7b; }
+mark { background:color-mix(in srgb, var(--accent) 35%, transparent); color:var(--ink); }
+.hit { display:block; padding:6px 0; border-bottom:1px solid var(--line); font:12.5px var(--mono); color:var(--mute); overflow-wrap:anywhere; }
+.hit b { color:var(--ink); }
+
+/* charts */
+.chart { width:100%; height:auto; background:rgba(3,5,10,.6); border:1px solid var(--line); border-radius:6px; }
+.chart text { fill:var(--mute); font:11px var(--mono); } .chart .ct { fill:var(--ink); font:600 13px var(--sans); }
+.chart .lab { fill:var(--ink); font:12px var(--sans); }
+.chart .frame { fill:none; stroke:var(--line); } .chart .grid { stroke:#1a2340; } .chart .axis { stroke:var(--mute); }
+.chart .bar { fill:var(--accent3); opacity:.8; }
+.chart .branch { fill:none; stroke:var(--mute); stroke-width:1; }
+.legend { display:flex; flex-wrap:wrap; gap:4px 14px; font-size:13px; margin:6px 0; }
+.legend span { display:inline-flex; align-items:center; gap:5px; }
+.claim { margin:8px 0; } .claim a { font:12px var(--mono); }
+.claim code { display:block; margin-top:2px; color:var(--mute); overflow-wrap:anywhere; }
+@media (max-width:760px) { .tree { position:static; max-height:50vh; } }

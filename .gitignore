@@ -13,3 +13,7 @@ EdX-Bioinformatics/**/*.tar.gz
 ranchoTest/
 shiny/censusDataApp/acs_2012_2016_county_us_B27001/
 shiny/shiny.rstudio.com-tutorial-master/*.pdf
+.DS_Store
+site/
+__pycache__/
+.pytest_cache/
